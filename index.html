@@ -23,12 +23,13 @@
         .border-crimson, .button-bg-crimson, .button-crimson {
           border-color: #7d0000;
         }
-
- 
+.nowrap {
+  white-space:nowrap;
+}
     </style>
   </head>
   <body>
-    <main>
+    <main id="top">
         <div class="container py-4">
  
         <header class="p-3 bg-dark text-white">
@@ -39,8 +40,8 @@
                 </a>
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                  <li><a href="#about" class="nav-link px-2 text-white">About</a></li>
+                  <li><a href="/" class="nav-link px-2 text-white">Home</a></li>
+                  <li><a href="#about" class="nav-link px-2 text-white">About the Gala</a></li>
                   <li><a href="#buytickets" class="nav-link px-2 text-white">Buy Tickets</a></li>
                   <li><a href="#becomeasponsor" class="nav-link px-2 text-white">Become A Sponsor</a></li>
                   <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>                  
@@ -51,48 +52,82 @@
                 </form>
         
                 <div class="text-end">
-                  <button type="button" class="btn btn-outline-light me-2">Buy Tickets</button>
-                  <button type="button" class="btn btn-warning">Subscribe</button>
+                  <button type="button" class="btn btn-outline-light me-2"><i class="bi bi-cart">&nbsp;</i>Buy Gala Tickets</button>
+                  <button type="button" class="btn button-bg-crimson"><i class="bi bi-person-plus">&nbsp;</i>Subscribe</button>
                 </div>
               </div>
             </div>
           </header>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
-          <img src="images/20220604_hero_centennial.gif" width="914" height="519" />        
+          <header class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+              <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-light text-decoration-none">
+                 
+                <span class="fs-4">Damian S. Jackson, Esq., Polemarch</span>
+              </a>
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search" hidden>
+              </form>
+            </div>
+          </header>
+        <div class="position-relative overflow-hidden p-3 p-md-12 m-md-3 text-center bg-dark">
+          <img class="img-fluid" src="images/20220604_hero_centennial.gif" width="914" height="519" />        
          
           </div>
 
           <div class="row align-items-md-stretch">
-            <div id="about" class="col-md-6">
+            <div id="about" class="col-md-7">
               <div class="h-100 p-5 text-white bg-dark rounded-3">
-                <h2>About the Centennial Gala</h2>
-                <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                <button class="btn btn-outline-light" type="button"><i class="bi bi-calendar2-check">&nbsp;</i>&nbsp;Save the Date</button>
-                <h3>Where</h3>
-<p><address>National Constitution Center<br /> 
-  525 Arch Street<br />
-  Philadelphia, PA 19106</address></p>
-                <h3>Contact</h3>
+                <h2>The Diamonds are Forever Gala</h2>
+                <p>June 4, 2022 at the National Constitution Center at 7 PM<br />
+                  hosted by The Philadelphia Alumni of Kappa Alpha Psi Fraternity, Inc.</p>
+                
+                <h3>When <small class="text-muted fw-light">Saturday June 4, 2022 from 7 PM</small></h3>
+                <p>
+                  Saturday June 4, 2022 7:00 PM to Midnight
+                  <details title="Saturday June 4th">
+                  Jazz, Hors d'oevres & Cocktails <time>7 PM</time><br />
+                  Dinner &amp; Program <time>9 PM to 10 PM</time><br />
+                  DJ &amp; Dessert <time>10 PM to 12 AM</time></details>
+                </p>
+                <button class="btn btn-outline-light" type="button"><i class="bi bi-calendar2-plus">&nbsp;</i>&nbsp;Save the Date</button>
+                <h3>Where <small class="text-muted fw-light">National Constituion Center</small></h3>
+                <p><address>525 Arch Street<br />
+                  Philadelphia, PA 19106</address></p>
+                <h4>Parking</h4>
+                <p>Offstreet parking is available adjacent to the National Constitution Center between 5th and 6th Street</p>
+                <h4>Accomodations</h4>                
+                <p>Special room rates are available<br />
+                <details>Hotel Name/Address + Amenities Here<br />
+                  booking Deadline here<br />
+<a class="text-white"  href="https://embassysuites.hilton.com/en/es/groups/personalized/P/PHLAPES-OVB-20201023/index.jhtml?WT.mc_id=POG" target="_blank">Click for Room Rate</a>
+                </details></p>
+                <button class="btn btn-outline-light" type="button"><i class="bi bi-map">&nbsp;</i>&nbsp;Get Directions</button>
+
+                <h3>Who <small class="text-muted fw-light">Chairman Jeffrey W. Montague</small></h3>
                 <p>Jeffrey W. Montague<br />
                 Centennial Gala Chairman<br />
                 Philadelphia Alumni Chapter of Kappa Alpha Psi Fraternity, Inc.<br />
-                (609) 346-1710<br />
-                montague@temple.edu    
-                </p>
+                <a class="text-white"  href="tel:+16093461710">(609) 346-1710</a><br />
+                <a class="text-white"  href="mailto:montague@temple.edu">montague@temple.edu</a></p>
+                <button class="btn btn-outline-light" type="button"><i class="bi bi-envelope">&nbsp;</i>&nbsp;Contact Us</button>
               </div>
             </div>
-            <div id="buytickets" class="col-md-6">  
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <h2>Buy Tickets</h2>
-                <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                <button class="btn btn-outline-secondary" type="button">Example button</button><img src="images/20220604_socialad_centennialgala.png" />
+            <div id="buytickets" class="col-md-5">  
+              <div class="h-100 p-5 bg-dark rounded-3">
+                <h2 class="nowrap hidden" hidden>The Diamonds are Forever Gala</h2>
+                <img class="img-fluid" src="images/20220604_socialad_centennialgala.png"  />
+                <h3>Buy Tickets</h3>
+                <p>Some blurb here about the Gala to entice buying (table rates, financial brother rates) other things.</p>
+                
+                <button class="btn btn-outline-light" type="button"><i class="bi bi-cart">&nbsp;</i>&nbsp;Buy Gala Tickets</button>
               </div>
             </div>
           </div>
           <div id="becomeasponsor" class="row align-items-md-stretch">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Become A Sponsor</h1>
-                <p class="fs-5 text-muted">Sponsorships benefit <a class="text-white" href="https://phillyachievementacademy.com" target="_blank">Philadelphia Alumni Achievement Academy</a> and <a  class="text-white" href="https://theachievementfoundation.org" target="_blank">The Achievement Foundation 501(c)3</a> Programs.<br />Select a sponsorship donation plan below.</p>
+                <p class="fs-5 text-muted">Sponsorships benefit <a class="text-white" href="https://phillyachievementacademy.com" target="_blank">Philadelphia Alumni Achievement Academy</a> and <a  class="text-white" href="https://theachievementfoundation.org" target="_blank">The Achievement Foundation 501(c)3</a> Programs.</p>
+                <h2  class="text-muted fw-light">Select a Plan</h2>
               </div>
             <div class="row row-cols-1 row-cols-md-4 mb-4 text-center">
                 <div class="col">
@@ -104,9 +139,9 @@
                       <h1 class="card-title pricing-card-title">$60<small class="text-muted fw-light">/ad</small></h1>
                       <ul class="list-unstyled mt-3 mb-4">
                         <li>Quarter Page Ad</li>
-                        <li>Digital Program Placement</li>
+                        <li>Virtual Program Placement</li>
                         <li>Event Slideshow Placement</li>
-                        <li>Commemerative Book Placement</li>
+                        <li>Tax Deductible</li>
                       </ul>
                       <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
                     </div>
@@ -121,8 +156,8 @@
                         <h1 class="card-title pricing-card-title">$100<small class="text-muted fw-light">/ad</small></h1>
                         <ul class="list-unstyled mt-3 mb-4">
                           <li>Half Page Ad</li>
-                          <li>2 GB of storage</li>
-                          <li>Email support</li>
+                          <li>Full Width Bleed Available</li>
+                          <li>Promotional</li>
                           <li>+ Everything in Patron Plan</li>
                         </ul>
                         <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
@@ -156,7 +191,7 @@
                       <ul class="list-unstyled mt-3 mb-4">
                         <li>Featured Full Page Ad</li>
                         <li>In Event Branding</li>
-                        <li>Event Tickets</li>
+                        <li>Event Ticket(s)</li>
                         <li>+ Everything in Main Plan</li>
                       </ul>
                       <button type="button" class="w-100 btn btn-lg btn-primary button-bg-crimson">Contact Us</button>
@@ -164,8 +199,6 @@
                   </div>
                 </div>
               </div>
-
-
           </div>
  
           <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -177,11 +210,8 @@
             </div>
         
             <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                <li class="nav-item"><a href="https://kappaalphapsi1911.com" class="nav-link px-2 text-muted" target="_blank">Kappa Alpha Psi</a></li>
+                <li class="nav-item"><a href="https://phillykappas.org" class="nav-link px-2 text-muted" target="_blank">Philadelphia Alumni</a></li>
               </ul>
           </footer>
         </div>
