@@ -1,5 +1,5 @@
 # centennial.phillykappas.org
-The vanity website for the Philadelphia Alumni of Kappa Alpha Psi Fraternity, Inc. Centennial website.
+The vanity website (centennial.phillykappas.org) for the Philadelphia Alumni of Kappa Alpha Psi Fraternity, Inc. Centennial Gala.
 
 ## Developer
 Luimbe Domingos, CrimsonLit.com
