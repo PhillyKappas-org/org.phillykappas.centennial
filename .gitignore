@@ -8,5 +8,5 @@
 # Local History for Visual Studio Code
 .history/
 
-
+# paint.net files excluded
 images/*.pdn
