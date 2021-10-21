@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS 
+    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/bootswatch@5/dist/darkly/bootstrap.min.css,npm/bootswatch@5/dist/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles_comingsoon.css">
+    <title>Centennial Gala</title>
+    <style>
+        .crimson, .button-crimson {
+            color:#7d0000;
+        }
+
+        .bg-crimson, .button-bg-crimson {
+            background-color: #7d0000;
+        }
+
+        .border-crimson, .button-bg-crimson, .button-crimson {
+          border-color: #7d0000;
+        }
+        
+        .nowrap {
+          white-space:nowrap;
+        }
+
+        .nodecoration {
+          text-decoration: none;
+        }
+    </style>
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://phillykappas.com/analytics/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '5']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+  </head>
+  <body>
+<div class="bgimg">
+    <div class="topleft">
+        <h1>COMING SOON</h1>
+      <p>June 4, 2022<br /><span id="demo" class="demo"></span></p>
+    </div>
+    <div class="middle">
+  
+      <hr>
+      <p></p>
+
+    </div>
+    <div class="bottomleft">
+      <p>Jeffrey Montague, Chairman - montague@temple.edu</p>
+    </div>
+  </div><script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jun 4, 2022 19:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get todays date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);</script>
+</body>
+  </html>
