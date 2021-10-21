@@ -3,5 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/philpkhg/public_html_centennial.phillykappas.org/
     - /bin/cp comingsoon.html $DEPLOYPATH
-    - /bin/cp /styles/style.css $DEPLOYPATH
-    - /bin/cp /images/* $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
