@@ -64,7 +64,7 @@
                   <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
                   <li><a href="#about" class="nav-link px-2 text-white">About the Gala</a></li>
                   <!--<li><a href="#buytickets" class="nav-link px-2 text-white">Buy Tickets</a></li>-->
-                  <li><a href="#becomeasponsor" class="nav-link px-2 text-white">Become A Sponsor</a></li>
+                  <li hidden><a href="#becomeasponsor" class="nav-link px-2 text-white">Become A Sponsor</a></li>
                   <li><a href="#faq" class="nav-link px-2 text-white">FAQ</a></li>                  
                 </ul>
         
@@ -110,7 +110,22 @@
                   Dinner &amp; Program <time>9 PM to 10 PM</time><br />
                   DJ &amp; Dessert <time>10 PM to 12 AM</time></details>
                 </p>
-                <button class="btn btn-outline-light" type="button"><i class="bi bi-calendar2-plus">&nbsp;</i>&nbsp;Save the Date</button>
+
+                <div class="btn-group">
+                  <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-calendar2-plus">&nbsp;</i>&nbsp;Save the Date</button>               
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item text-white" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20220604T230000Z%2F20220605T040000Z&details=The%20Diamonds%20are%20Forever%20Gala%0AJune%204%2C%202022%20at%20the%20National%20Constitution%20Center%20at%207%20PM%0Ahosted%20by%20The%20Philadelphia%20Alumni%20of%20Kappa%20Alpha%20Psi%20Fraternity%2C%20Inc.%0AWhere%20National%20Constitution%20Center%2C%20525%20Arch%20Street%2C%20Philadelphia%2C%20PA%2019106%0AParking%20-%20Off-street%20parking%20is%20available%20adjacent%20to%20the%20National%20Constitution%20Center%20between%205th%20and%206th%20Street%0AAccommodations%20-%20Special%20room%20rates%20are%20available&location=National%20Constitutional%20Center%2C%20525%20Arch%20Street%2C%20Philadelphia%2C%20PA%2019146&text=Centennial%20Gala" title="Save Event in my Google Calendar" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-google" viewBox="0 0 24 24">
+                      <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                    </svg>&nbsp;Add to Google Calendar</a>
+                    </li>
+                    <li>
+                      <a  class="dropdown-item text-white" href="https://outlook.office.com/calendar/0/deeplink/compose?body=The%20Diamonds%20are%20Forever%20Gala%0AJune%204%2C%202022%20at%20the%20National%20Constitution%20Center%20at%207%20PM%0Ahosted%20by%20The%20Philadelphia%20Alumni%20of%20Kappa%20Alpha%20Psi%20Fraternity%2C%20Inc.%0AWhere%20National%20Constitution%20Center%2C%20525%20Arch%20Street%2C%20Philadelphia%2C%20PA%2019106%0AParking%20-%20Off-street%20parking%20is%20available%20adjacent%20to%20the%20National%20Constitution%20Center%20between%205th%20and%206th%20Street%0AAccommodations%20-%20Special%20room%20rates%20are%20available&enddt=2022-06-05T04%3A00%3A00%2B00%3A00&location=National%20Constitutional%20Center%2C%20525%20Arch%20Street%2C%20Philadelphia%2C%20PA%2019146&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2022-06-04T23%3A00%3A00%2B00%3A00&subject=Centennial%20Gala" title="Save Event in my MS Office Calendar" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-microsoft" viewBox="0 0 24 24">
+                      <path d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z"/>
+                    </svg>&nbsp;Add to MS Office 365 Calendar</a></li>
+                </ul>  
+                </div>
+ 
                 <h3>Where <small class="text-muted fw-light">National Constitution Center</small></h3>
                 <p><address>525 Arch Street<br />
                   Philadelphia, PA 19106</address></p>
@@ -136,16 +151,16 @@
             <div id="buytickets" class="col-md-5">  
               <div class="h-100 p-5 bg-dark rounded-3">
                 <h2 class="nowrap hidden" hidden>The Diamonds are Forever Gala</h2>
-                <img class="img-fluid" src="images/20220604_socialad_centennialgala.png"  />
+                <img class="img-fluid" src="images/20220604_socialad_centennialgala.png"  title="Centennial Social Ad" />
                 <h3>Buy Tickets</h3>
                 <p>Tickets are <strong>$150/per guest</strong>. Tickets can be bought in groups of one to up ten (10). Ten is a full table.</p>
                 <h3>Philadelphia Alumni Members</h3>
                 <p>Click the link below and sign in to PhillyKappas.org to see special pricing.</p>
-                <button class="btn btn-outline-light" type="button"><i class="bi bi-cart">&nbsp;</i>&nbsp;Buy Gala Tickets</button>
+                <a class="btn btn-outline-light" type="button" href="https://phillykappas.org/event/centennial-gala/"><i class="bi bi-cart">&nbsp;</i>&nbsp;Buy Gala Tickets</a>
               </div>
             </div>
           </div>
-          <div id="becomeasponsor" class="row align-items-md-stretch">
+          <div id="becomeasponsor" class="row align-items-md-stretch" hidden>
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Become A Sponsor</h1>
                 <p class="fs-5 text-muted">Sponsorships benefit <a class="text-white" href="https://phillyachievementacademy.com" target="_blank">Philadelphia Alumni Achievement Academy</a> and <a  class="text-white" href="https://theachievementfoundation.org" target="_blank">The Achievement Foundation 501(c)3</a> Programs.</p>
@@ -153,7 +168,7 @@
               </div>
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
  
-              <div class="col">
+              <div id="row_1_col_a" class="col">
                 <div class="card mb-4 rounded-3 shadow-sm border-primary ">
                   <div class="card-header py-3 text-white border-primary bg-crimson">
                     <h4 class="my-0 fw-normal">Title</h4>
@@ -166,13 +181,13 @@
                       <li>Event Ticket(s)</li>
                       <li>+ Everything in Main Plan</li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary button-bg-crimson">Contact Us</button>
+                    <a type="button" class="w-100 btn btn-lg btn-primary button-bg-crimson">Contact Us</a>
                   </div>
                 </div>
               </div>
                 
                 
-                <div class="col">
+                <div id="row_1_col_b" class="col">
                   <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
                       <h4 class="my-0 fw-normal">Crimson</h4>
@@ -189,7 +204,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div  id="row_1_col_c" class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
                     <h4 class="my-0 fw-normal">Cream</h4>
@@ -212,66 +227,65 @@
                 <h2  class="text-muted fw-light">Small Business Sponsorship Plans</h2>
               </div>
               <!--Small Business Sponsorship Options-->
-<div  class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Benefactor</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$2500<small class="text-muted fw-light">/ad</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Quarter Page Ad</li>
-          <li>Virtual Program Placement</li>
-          <li>Event Slideshow Placement</li>
-          <li>Tax Deductible</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Patron</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$1000<small class="text-muted fw-light">/ad</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Business Card Ad</li>
-          <li>Virtual Program Placement</li>
-          <li>Logo on Banner of Sponsors</li>
-          <li>2 tickets to the Gala</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card mb-4 rounded-3 shadow-sm">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Supportive</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">$500<small class="text-muted fw-light">/ad</small></h1>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Text Ad</li>
-          <li>Virtual Program Placement</li>
-          <li>2 tickets to the Gala</li>
-          <li>Tax Deductible</li>
-        </ul>
-        <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
-      </div>
-    </div>
-  </div>
-</div>
+              <div  class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div  id="row_2_col_a"  class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Benefactor</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$2500<small class="text-muted fw-light">/ad</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Quarter Page Ad</li>
+                        <li>Virtual Program Placement</li>
+                        <li>Event Slideshow Placement</li>
+                        <li>Tax Deductible</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div  id="row_2_col_b"  class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Patron</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$1000<small class="text-muted fw-light">/ad</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Business Card Ad</li>
+                        <li>Virtual Program Placement</li>
+                        <li>Logo on Banner of Sponsors</li>
+                        <li>2 tickets to the Gala</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="row_2_col_c"   class="col">
+                  <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                      <h4 class="my-0 fw-normal">Supportive</h4>
+                    </div>
+                    <div class="card-body">
+                      <h1 class="card-title pricing-card-title">$500<small class="text-muted fw-light">/ad</small></h1>
+                      <ul class="list-unstyled mt-3 mb-4">
+                        <li>Text Ad</li>
+                        <li>Virtual Program Placement</li>
+                        <li>2 tickets to the Gala</li>
+                        <li>Tax Deductible</li>
+                      </ul>
+                      <button type="button" class="w-100 btn btn-lg  btn-outline-light">Donate Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           </div>
 <!--FAQ-->
-
           <div class="container px-4 py-5" id="faq">
             <h2 class="pb-2 border-bottom">Frequently Asked Questions</h2>
-        <p  class="fs-5 text-muted">Click a Frequently Asked Question below to get to see the answer.</p>
+             <p  class="fs-5 text-muted">Click a Frequently Asked Question below to get to see the answer.</p>
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
               <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('images/20170716-PhillyKappasCookout.jpg');background-size:cover">
@@ -293,7 +307,6 @@
                   </div>
                 </div>
               </div>
-        
 
               <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('images/photo_49thpolemarch_jackson_damian.jpg');background-repeat:no-repeat;background-origin:border-box;background-size:cover">
@@ -423,15 +436,14 @@
         </div>
     </main>
  
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="./bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5,npm/jsrender@1"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+ 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+
+    <!-- Matomo Image Tracker-->
+    <img referrerpolicy="no-referrer-when-downgrade" src="https://phillykappas.com/analytics/matomo.php?idsite=5&amp;rec=1" style="border:0" alt="" />
+    <!-- End Matomo -->
+
   </body>
 </html>
